@@ -95,7 +95,7 @@ export const places = [
     name: "Metzingen, Germany",
     note: "Best Döner in Germany!",
     image: "/public/images/travel/metz.jpeg",
-    location: "53.5511, 9.9937",
+    location: "48.5333, 9.2667",
   },
   {
     name: "Tübingen, Germany",
