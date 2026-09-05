@@ -4,7 +4,7 @@ export const profile = {
   eyebrow: "AFFECTIVE COMPUTING· MULTIMODAL SIGNALS · HCI",
   headline: "Curious about how technology can feel.",
   intro:
-    "Technology has always played a role in our social life. Not long ago, intelligent systems mainly mediated our relationships and expanded our social networks; more recently, they have become one of those relationships and networks. I am drawn to explore how they can be integrated into everyday life in ways that feel natural, meaningful, and supportive.",
+    "Not long ago, intelligent systems mainly mediated our relationships and expanded our social networks; more recently, they have become one of those relationships and networks. I am drawn to explore how they can be integrated into everyday life in ways that feel natural, meaningful, and supportive.",
   supervisor: {
     name: "Dr. Philipp Müller",
     url: "https://scholar.google.com/citations?user=RmcYRGAAAAAJ",
