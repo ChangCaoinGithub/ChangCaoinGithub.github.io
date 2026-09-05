@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sitePath } from "./site-path";
 
 export function SiteHeader({ active = "about" }: { active?: "about" | "research" | "news" | "travel" }) {
   return (
@@ -10,7 +11,7 @@ export function SiteHeader({ active = "about" }: { active?: "about" | "research"
           <Link className={active === "research" ? "active" : ""} href="/research">Research</Link>
           <Link className={active === "news" ? "active" : ""} href="/news">News</Link>
           <Link className={active === "travel" ? "active" : ""} href="/travel">Travel</Link>
-          <a href="/#contact">Contact</a>
+          <a href={sitePath("/#contact")}>Contact</a>
         </nav>
       </div>
     </header>

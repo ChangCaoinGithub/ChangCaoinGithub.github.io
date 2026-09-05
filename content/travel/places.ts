@@ -194,7 +194,7 @@ export const places = [
   {
     name: "Biel, Switzerland",
     year: "2024",
-    image: "/public/images/travel/biel.jpg",
+    image: "/public/images/travel/biel.JPG",
     location: "47.137684, 7.259476",
   },
 

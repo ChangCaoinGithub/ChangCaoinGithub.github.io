@@ -1,6 +1,7 @@
 import { SiteHeader } from "../SiteHeader";
 import { projects } from "../../content/research/projects";
 import { publications } from "../../content/research/publications";
+import { sitePath } from "../site-path";
 
 function formatAuthors(authors: string) {
   return authors.split("C. Cao").map((part, index, parts) => (
@@ -39,7 +40,7 @@ export default function ResearchPage() {
               <p>{formatAuthors(publication.authors)}</p>
               <small>{publication.venue}</small>
             </div>
-            <div>{publication.links.map((link) => <a href={link.url} target="_blank" rel="noreferrer" key={link.url}>{link.label} ↗</a>)}</div>
+            <div>{publication.links.map((link) => <a href={link.url.startsWith("/") ? sitePath(link.url) : link.url} target="_blank" rel="noreferrer" key={link.url}>{link.label} ↗</a>)}</div>
           </article>
         ))}
       </section>

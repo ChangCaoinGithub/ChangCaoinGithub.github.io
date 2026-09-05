@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Map as LeafletMap } from "leaflet";
 import { places } from "../../content/travel/places";
 import { locationToLatLon } from "../../content/travel/coordinates";
+import { sitePath } from "../site-path";
 
 export function RealTravelMap() {
   const mapElement = useRef<HTMLDivElement>(null);
@@ -105,7 +106,7 @@ export function RealTravelMap() {
       <div className="real-map" ref={mapElement} aria-label="Interactive travel map" />
       <article className="place-card" ref={cardElement}>
         <div className="place-image">
-          {place.image ? <img src={place.image} alt={place.name} /> : <span>📍</span>}
+          {place.image ? <img src={sitePath(place.image)} alt={place.name} /> : <span>📍</span>}
           <div className="place-arrows">
             <button onClick={() => selectPlace((active - 1 + places.length) % places.length)} aria-label="Previous place">‹</button>
             <button onClick={() => selectPlace((active + 1) % places.length)} aria-label="Next place">›</button>

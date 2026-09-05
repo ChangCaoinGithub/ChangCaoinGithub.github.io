@@ -4,6 +4,7 @@ import { SiteHeader } from "./SiteHeader";
 import { profile } from "../content/about/profile";
 import { projects } from "../content/research/projects";
 import { news } from "../content/news/items";
+import { sitePath } from "./site-path";
 
 function PreviewHeading({ eyebrow, title, href }: { eyebrow: string; title: string; href: string }) {
   return <div className="preview-heading"><div><p className="eyebrow">{eyebrow}</p><h2>{title}</h2></div><Link className="more-link" href={href} aria-label={`Explore more ${title}`}>Explore more <span>→</span></Link></div>;
@@ -19,7 +20,7 @@ export default function Home() {
       </section>
 
       <section className="home-block shell" id="about">
-        <div className="about-home"><div className="profile-photo">{profile.photo ? <img src={profile.photo} alt="Chang Cao" /> : <><span>CC</span><small>Profile photo</small></>}</div><div><p className="eyebrow">ABOUT ME</p><h2>I study what makes interaction feel human.</h2><p className="role">{profile.role}</p><p><br />I am currently working under the supervision of <a className="body-link" href={profile.supervisor.url} target="_blank" rel="noreferrer">{profile.supervisor.name}</a> at the <a className="body-link" href={profile.group.url} target="_blank" rel="noreferrer">{profile.group.name}</a>. {profile.about}</p><a className="text-link" href={`mailto:${profile.email}`} target="_blank" rel="noreferrer">Say hi through an email <span>↗</span></a></div></div>
+        <div className="about-home"><div className="profile-photo">{profile.photo ? <img src={sitePath(profile.photo)} alt="Chang Cao" /> : <><span>CC</span><small>Profile photo</small></>}</div><div><p className="eyebrow">ABOUT ME</p><h2>I study what makes interaction feel human.</h2><p className="role">{profile.role}</p><p><br />I am currently working under the supervision of <a className="body-link" href={profile.supervisor.url} target="_blank" rel="noreferrer">{profile.supervisor.name}</a> at the <a className="body-link" href={profile.group.url} target="_blank" rel="noreferrer">{profile.group.name}</a>. {profile.about}</p><a className="text-link" href={`mailto:${profile.email}`} target="_blank" rel="noreferrer">Say hi through an email <span>↗</span></a></div></div>
       </section>
 
       <section className="home-block shell">

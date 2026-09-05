@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { places } from "../content/travel/places";
 import { locationToPoint } from "../content/travel/coordinates";
+import { sitePath } from "./site-path";
 
 const avatarGroups = {
   People: ["🧑🏻", "🧑🏼", "🧑🏽", "🧑🏾", "🧑🏿", "👩🏻", "👩🏼", "👩🏽", "👩🏾", "👩🏿", "👨🏻", "👨🏼", "👨🏽", "👨🏾", "👨🏿", "👵🏽", "👴🏻", "🧕🏾", "👳🏽‍♂️", "🧑🏻‍🦽"],
@@ -91,7 +92,7 @@ export function TravelMap({ zoomable = false }: { zoomable?: boolean }) {
       <div className="map-wrap">
         <div className="map-viewport">
           <div className="map-canvas" style={{ transform: `scale(${zoom})` }}>
-            <img src="/world-map-equirectangular.svg" alt="Equirectangular world map with visited and future destinations" />
+            <img src={sitePath("/world-map-equirectangular.svg")} alt="Equirectangular world map with visited and future destinations" />
             {places.map((item, index) => {
               const point = locationToPoint(item.location);
               return (
@@ -108,7 +109,7 @@ export function TravelMap({ zoomable = false }: { zoomable?: boolean }) {
       </div>
       <article className="place-card">
         <div className="place-image">
-          {place.image ? <img src={place.image} alt={place.name} /> : <span>📍</span>}
+          {place.image ? <img src={sitePath(place.image)} alt={place.name} /> : <span>📍</span>}
           <div className="place-arrows">
             <button onClick={() => setActive((active - 1 + places.length) % places.length)} aria-label="Previous place">‹</button>
             <button onClick={() => setActive((active + 1) % places.length)} aria-label="Next place">›</button>
