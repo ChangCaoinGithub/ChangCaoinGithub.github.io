@@ -9,7 +9,6 @@ export const news = [
   { date: "05.2025", title: "Joined the Haptic Intelligence Department at MPI-IS as a student assistant.", type: "Research" },
 
   { date: "09.2024", title: "Joined Bosch Digital in Stuttgart as a Data-Driven UX Researcher intern.", type: "Industry" },
-
   { date: "04.2024", title: "Joined the Realistic Depictions Lab at Leibniz-Institut for Knowledge Media (IWM) in Tübingen as a research intern.", type: "Research" },
   
   { date: "2022", title: "Serving as Student Representative on the APA Division 52 Global Student Committee.", type: "Social Activities" },
@@ -23,14 +22,12 @@ export const news = [
 
   { date: "2019", title: "Awarded Honor Student from SMU.", type: "Award" },
   { date: "2019", title: "Awarded scholarship from SMU.", type: "Award" },
-
   { date: "04.2019", title: "Joined the Brain Imaging Lab at SMU as a student assistant.", type: "Research" },
 
   { date: "2018", title: "Awarded scholarship from SMU.", type: "Award" },
   { date: "2018", title: "Awarded Honor Student from SMU.", type: "Award" },
-
-  { date: "08.2017", title: "Started my B.Sc. in Applied Psychology at Southwest Minzu University (SMU)!", type: "Education" },
-
+  
   { date: "2017", title: "Awarded the Outstanding Award and Best Debater title at the 2nd Chinese Debate World Cup.", type: "Award" },
+  { date: "08.2017", title: "Started my B.Sc. in Applied Psychology at Southwest Minzu University (SMU)!", type: "Education" },
 
 ];
