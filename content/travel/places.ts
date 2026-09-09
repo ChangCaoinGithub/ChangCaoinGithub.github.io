@@ -202,7 +202,6 @@ export const places = [
   {
     name: "Trento, Italy",
     year: "2026",
-    note: "A placeholder for a place still waiting to become a story.",
     image: "",
     location: "46.0748, 11.1217",
   },
