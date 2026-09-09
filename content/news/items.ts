@@ -1,6 +1,7 @@
 export const news = [
+  { date: "08.2026", title: "Joined the core team of [Catalyst](https://catalyst-app.org/) as the Max Planck Society liaison!", type: "Social Activities" },
+  { date: "05.2026", title: "Serving as PhD Representative at MPI-IS!", type: "Social Activities" },
   { date: "05.2026", title: "Starting my PhD journey as an IMPRS-IS scholar!", type: "Education" },
-  { date: "2026", title: "Serving as PhD Representative at MPI-IS!", type: "Social Activities" },
   { date: "05.2026", title: "Graduated with an M.Sc. in Cognitive Science from UT, with a thesis graded 1.0/1.0!", type: "Education" },
 
   { date: "05.2025", title: "Joined the Haptic Intelligence Department at MPI-IS as a student assistant.", type: "Research" },
