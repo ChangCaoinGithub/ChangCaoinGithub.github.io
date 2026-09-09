@@ -189,7 +189,7 @@ h1 em { font-style:normal; color:var(--green); }
   .page-hero { min-height:500px; }
   .page-hero h1 { font-size:42px; }
   .preview-heading { margin-bottom:30px; }
-  .news-preview>a { grid-template-columns:52px 1fr 20px; gap:12px; }
+  .news-preview>a { grid-template-columns:65px 1fr 20px; gap:16px; }
   .large-timeline article { grid-template-columns:1fr; gap:25px; }
   .large-timeline article>div:first-child { justify-content:flex-start; gap:30px; }
   .fact-grid { grid-template-columns:1fr; gap:20px; }
