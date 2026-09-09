@@ -1,9 +1,10 @@
+import { createElement } from "react";
 export const news = [
-  { date: "08.2026", title: "Joined the core team of <a href='https://catalyst-app.org/' target='_blank' rel='noreferrer'>Catalyst</a> as the Max Planck Society liaison!", type: "Social Activities" },
+  { date: "08.2026", title: createElement("span", null, "Joined the core team of ", createElement("a", { href: "https://catalyst-app.org/", target: "_blank", rel: "noreferrer" }, "Catalyst"), " as the Max Planck Society liaison!"), type: "Social Activities" },
   { date: "05.2026", title: "Serving as PhD Representative at MPI-IS!", type: "Social Activities" },
   { date: "05.2026", title: "Starting my PhD journey as an IMPRS-IS scholar!", type: "Education" },
   { date: "05.2026", title: "Graduated with an M.Sc. in Cognitive Science from UT, with a thesis graded 1.0/1.0!", type: "Education" },
-  { date: "05.2026", title: "Our paper, <a href='https://is.mpg.de/esi/publications/cao26-aom' target='_blank' rel='noreferrer'>“The Role-Sensitive Nature of Gaze: Listener Engagement in Natural Group Interaction”</a>, has been accepted for presentation in the seminar “Who Gets Seen as a Leader? Signals, Status, and AI in Modern Organizations” at the 2026 Annual Meeting of the Academy of Management. See you in Philadelphia this July!", type: "Research" },
+  { date: "05.2026", title: createElement("span", null, "Our paper, ", createElement("a", { href: "https://is.mpg.de/esi/publications/cao26-aom", target: "_blank", rel: "noreferrer" }, "“The Role-Sensitive Nature of Gaze: Listener Engagement in Natural Group Interaction”"), ", has been accepted for presentation in the seminar “Who Gets Seen as a Leader? Signals, Status, and AI in Modern Organizations” at the 2026 Annual Meeting of the Academy of Management. See you in Philadelphia this July!"), type: "Research" },
   
   { date: "05.2025", title: "Joined the Haptic Intelligence Department at MPI-IS as a student assistant.", type: "Research" },
 
