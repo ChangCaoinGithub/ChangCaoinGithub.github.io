@@ -230,4 +230,5 @@ h1 em { font-style:normal; color:var(--green); }
   .news-timeline article { grid-template-columns:27px 1fr; }
   .news-timeline time,.news-timeline h2,.news-type { grid-column:2; }
   .timeline-marker { grid-row:1 / span 3; }
+  .real-travel-grid .place-card { order:-1; position:static; }
 }
