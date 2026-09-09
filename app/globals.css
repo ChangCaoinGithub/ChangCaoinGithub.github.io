@@ -156,7 +156,7 @@ h1 em { font-style:normal; color:var(--green); }
   @keyframes fade-up { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
 }
 @media (max-width:850px) {
-  .nav nav { display:none; }
+  .nav nav { display:flex; gap:12px; font-size:11px; }
   .hero { min-height:auto; grid-template-rows:auto 500px; }
   .hero-copy { padding:60px 0 44px; grid-template-columns:1fr; gap:24px; }
   h1 { font-size:44px; }
