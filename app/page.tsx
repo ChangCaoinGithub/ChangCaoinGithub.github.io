@@ -38,7 +38,7 @@ export default function Home() {
         <p className="fun-intro">Where else do you think I should visit at least once in my life?</p><TravelMap />
       </section>
 
-      <footer className="home-block shell contact" id="contact"><div><p className="eyebrow">CONTACT</p><h2>Let’s connect.</h2></div><div className="contact-row"><a href={`mailto:${profile.email}`} target="_blank" rel="noreferrer">{profile.email}</a><div className="socials"><a href={profile.scholar}>Google Scholar ↗</a><a href={profile.linkedin}>LinkedIn ↗</a></div></div></footer>
+      <footer className="home-block shell contact" id="contact"><div><p className="eyebrow">CONTACT</p><h2>Let’s connect.</h2></div><div className="contact-row"><a href={`mailto:${profile.email}`}>{profile.email}</a><div className="socials"><a href={profile.scholar} target="_blank" rel="noreferrer">Google Scholar <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></a><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></a></div></div></footer>
     </main>
   );
 }
